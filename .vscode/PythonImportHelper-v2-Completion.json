@@ -256,14 +256,6 @@
         "documentation": {}
     },
     {
-        "label": "run_flux",
-        "importPath": "app.services.flux_service",
-        "description": "app.services.flux_service",
-        "isExtraImport": true,
-        "detail": "app.services.flux_service",
-        "documentation": {}
-    },
-    {
         "label": "tempfile,",
         "kind": 6,
         "isExtraImport": true,
@@ -2153,15 +2145,6 @@
         "documentation": {}
     },
     {
-        "label": "delete_file",
-        "kind": 2,
-        "importPath": "app.routes.endpoints",
-        "description": "app.routes.endpoints",
-        "peekOfCode": "def delete_file(file_path: str):\n    try:\n        os.remove(file_path)\n        print(f\"✅ Deleted {file_path}\")\n    except FileNotFoundError:\n        print(f\"⚠️ File {file_path} not found for deletion.\")\n    except Exception as e:\n        print(f\"❌ Error deleting file {file_path}: {e}\")\n@router.get(\"/generate-flux\")\nasync def generate_flux(prompt: str, return_base64: bool = False, background_tasks: BackgroundTasks = None):",
-        "detail": "app.routes.endpoints",
-        "documentation": {}
-    },
-    {
         "label": "stt",
         "kind": 5,
         "importPath": "app.routes.endpoints",
@@ -2319,7 +2302,7 @@
         "kind": 5,
         "importPath": "app.scripts.flux_run",
         "description": "app.scripts.flux_run",
-        "peekOfCode": "pipe = FluxPipeline.from_pretrained(\n    \"black-forest-labs/FLUX.1-dev\",\n    torch_dtype=torch.bfloat16,\n    device_map=\"balanced\"\n)\n# Generate image\nimage = pipe(\n    args.prompt,\n    guidance_scale=3.5,\n    num_inference_steps=50,",
+        "peekOfCode": "pipe = FluxPipeline.from_pretrained(\n    \"black-forest-labs/FLUX.1-dev\",\n    torch_dtype=torch.bfloat16,\n    device_map=\"balanced\"\n)\n# Generate image\nimage = pipe(\n    args.prompt,\n    height=1024,\n    width=1024,",
         "detail": "app.scripts.flux_run",
         "documentation": {}
     },
@@ -2328,7 +2311,7 @@
         "kind": 5,
         "importPath": "app.scripts.flux_run",
         "description": "app.scripts.flux_run",
-        "peekOfCode": "image = pipe(\n    args.prompt,\n    guidance_scale=3.5,\n    num_inference_steps=50,\n    max_sequence_length=512,\n    generator=torch.manual_seed(0)\n).images[0]\n# Save image\noutput_dir = \"./output\"\nos.makedirs(output_dir, exist_ok=True)",
+        "peekOfCode": "image = pipe(\n    args.prompt,\n    height=1024,\n    width=1024,\n    guidance_scale=3.5,\n    num_inference_steps=50,\n    max_sequence_length=512,\n    generator=torch.manual_seed(0)\n).images[0]\n# Save image",
         "detail": "app.scripts.flux_run",
         "documentation": {}
     },
