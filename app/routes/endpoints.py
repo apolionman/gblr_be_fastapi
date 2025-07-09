@@ -58,7 +58,7 @@ async def interrogate_image(
 ALLOWED_TYPES = {
     "audio/mpeg", "audio/webm", "video/mp4",
     "audio/mp4", "video/webm", "audio/x-m4a", 
-    "audio/m4a",  "audio/ogg"
+    "audio/m4a",  "audio/ogg", "video/quicktime"
 }
 
 MIME_EXTENSION_MAP = {

@@ -2212,7 +2212,7 @@
         "kind": 5,
         "importPath": "app.routes.endpoints",
         "description": "app.routes.endpoints",
-        "peekOfCode": "ALLOWED_TYPES = {\n    \"audio/mpeg\", \"audio/webm\", \"video/mp4\",\n    \"audio/mp4\", \"video/webm\", \"audio/x-m4a\", \n    \"audio/m4a\",  \"audio/ogg\"\n}\nMIME_EXTENSION_MAP = {\n    \"audio/mpeg\": \".mp3\",\n    \"audio/webm\": \".webm\",\n    \"video/webm\": \".webm\",\n    \"video/mp4\": \".mp4\",",
+        "peekOfCode": "ALLOWED_TYPES = {\n    \"audio/mpeg\", \"audio/webm\", \"video/mp4\",\n    \"audio/mp4\", \"video/webm\", \"audio/x-m4a\", \n    \"audio/m4a\",  \"audio/ogg\", \"video/quicktime\"\n}\nMIME_EXTENSION_MAP = {\n    \"audio/mpeg\": \".mp3\",\n    \"audio/webm\": \".webm\",\n    \"video/webm\": \".webm\",\n    \"video/mp4\": \".mp4\",",
         "detail": "app.routes.endpoints",
         "documentation": {}
     },
