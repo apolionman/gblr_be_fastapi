@@ -69,7 +69,8 @@ MIME_EXTENSION_MAP = {
     "audio/mp4": ".mp4",
     "audio/x-m4a": ".m4a",
     "audio/m4a": ".m4a",
-    "audio/ogg": ".ogg"
+    "audio/ogg": ".ogg",
+    "video/quicktime": ".mov",
 }
 
 @router.post("/transcribe")

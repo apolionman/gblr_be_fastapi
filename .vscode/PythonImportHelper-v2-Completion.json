@@ -2221,7 +2221,7 @@
         "kind": 5,
         "importPath": "app.routes.endpoints",
         "description": "app.routes.endpoints",
-        "peekOfCode": "MIME_EXTENSION_MAP = {\n    \"audio/mpeg\": \".mp3\",\n    \"audio/webm\": \".webm\",\n    \"video/webm\": \".webm\",\n    \"video/mp4\": \".mp4\",\n    \"audio/mp4\": \".mp4\",\n    \"audio/x-m4a\": \".m4a\",\n    \"audio/m4a\": \".m4a\",\n    \"audio/ogg\": \".ogg\"\n}",
+        "peekOfCode": "MIME_EXTENSION_MAP = {\n    \"audio/mpeg\": \".mp3\",\n    \"audio/webm\": \".webm\",\n    \"video/webm\": \".webm\",\n    \"video/mp4\": \".mp4\",\n    \"audio/mp4\": \".mp4\",\n    \"audio/x-m4a\": \".m4a\",\n    \"audio/m4a\": \".m4a\",\n    \"audio/ogg\": \".ogg\",\n    \"video/quicktime\": \".mov\",",
         "detail": "app.routes.endpoints",
         "documentation": {}
     },
