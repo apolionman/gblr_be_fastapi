@@ -17,7 +17,8 @@ from clip_interrogator import Config, Interrogator
 
 config = Config()
 config.device = "cuda"
-config.clip_model_name = "ViT-H-14/laion2b_s32b_b79k"
+# config.clip_model_name = "ViT-H-14/laion2b_s32b_b79k"
+config.clip_model_name = "ViT-bigG-14/laion2b_39b_b160k"
 config.precision = 'full'  
 ci = Interrogator(config)
 
